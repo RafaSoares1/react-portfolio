@@ -1,0 +1,38 @@
+.contact-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh; /* This takes the full height of the viewport */
+	gap: 20px;
+}
+
+.contact-box {
+
+	width: 150px; /* Fixed size for each box */
+	height: 80px; /* Fixed height for each box */
+	display: flex;
+	justify-content: center;
+	border-radius: 0.5rem 2rem 0.5rem 2rem;
+	align-items: center;
+	text-align: center;
+	background: linear-gradient(270deg, #ffffff00, var(--blue) 70%); /* Light background */
+	transition: background-color 0.3s; /* Smooth background color change on hover */
+	cursor: pointer;
+}
+
+/* Add color variations for each box */
+.linkedin { color: #ffffff; } /* LinkedIn color */
+.github { color: white; } /* GitHub color */
+.cv { color: white; } /* A neutral, pleasant color for CV */
+.email { color: white; } /* A color that stands out for email */
+
+.contact-box:hover {
+	background-color: #8f8f8f; /* Darker background on hover */
+}
+
+/* For copying email purposes, you might need a JavaScript function to handle that */
+.email:hover {
+	background-color: #8f8f8f; /* Different color on hover for email */
+	cursor: text;
+}
